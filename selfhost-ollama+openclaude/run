@@ -10,7 +10,7 @@
 set -e
 
 # ---------- defaults ----------
-MODEL="qwen2.5-coder:7b"
+MODEL="smollm2:1.7b" # leve
 BORE_PORT=""          # empty = random
 BORE_SECRET=""
 OLLAMA_PORT=11434
