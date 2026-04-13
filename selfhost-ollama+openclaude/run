@@ -48,8 +48,9 @@ if ! command -v ollama &> /dev/null; then
   curl -fsSL https://ollama.com/install.sh | sh > /dev/null 2>&1
 fi
 
-# Kill any existing ollama
+# Kill any existing ollama and... bore
 pkill -f ollama 2>/dev/null || true
+pkill -f bore 2>/dev/null || true
 sleep 2
 
 # Start ollama bound to all interfaces
